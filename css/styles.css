@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+:root {
+    --bg-primary: #323232;
+    --bg-secondary: #212121;
+    --color-white: #fff;
+    --color-primary: #14FFEC;
+    --color-secondary: #0D7377;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--color-white);
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+h2 {
+    color: var(--color-secondary);
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card {
+    background: var(--bg-secondary);
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card__content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+
+.project__list{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.project__list li{
+    background: var(--bg-primary);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms transform ease-in-out;
+}
+
+.project__list li:hover{
+    transform: translateY(-10px);
+}
+
+.project__img img{
+    height: 10rem;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project__name{
+    font-size: 1.2rem;
+    font-weight:bolder;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .project__list{
+        flex-direction: column;
+        justify-self: start!important;
+    }
+    .project__img img{
+        height: 8rem;
+        width: auto;
+        border-radius: 10px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+    }
+}
